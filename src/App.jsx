@@ -15,7 +15,7 @@ import SignUpPage from "./Pages/SignUpPage";
 import LoginPage from "./Pages/LoginPage";
 import EmailVerificationPage from "./Pages/EmailVerificationPage";
 import ForgotPasswordPage from "./Pages/ForgotPasswordPage";
-import ResetPasswordPage from "./pages/ResetPasswordPage";
+import ResetPasswordPage from "./Pages/ResetPasswordPage";
 import LoadingSpinner from "./components/LoadingSpinner";
 import Dashboard from './Pages/DashBoardPage';
 import { Toaster } from "react-hot-toast";
