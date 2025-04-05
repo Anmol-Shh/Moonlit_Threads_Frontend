@@ -23,7 +23,7 @@ const CartSidebar = ({ isOpen, toggleCart }) => {
     if (newQuantity < 1) return; // Prevent quantity from going below 1
     
     try {
-      await axios.put(`http://localhost:4000/cart/${user._id}/${productId}`, {
+      await axios.put(`${import.meta.env.VITE_API_BASE_URL}/${user._id}/${productId}`, {
         quantity: newQuantity
       });
 
@@ -90,7 +90,7 @@ const CartSidebar = ({ isOpen, toggleCart }) => {
   
   const handleRemove = async (productId) => {
     try {
-      await axios.delete(`http://localhost:4000/cart/${user._id}/${productId}`);
+      await axios.delete(`${import.meta.env.VITE_API_BASE_URL}/cart/${user._id}/${productId}`);
   
       setCartItems((prevItems) => prevItems.filter(item => item.productId !== productId));
     } catch (err) {
@@ -104,7 +104,7 @@ const CartSidebar = ({ isOpen, toggleCart }) => {
 
     const handleCheckout = async () => {
       try {
-        const { data } = await axios.post("http://localhost:4000/api/payment/order", {
+        const { data } = await axios.post("${import.meta.env.VITE_API_BASE_URL}/api/payment/order", {
           amount: subtotal, 
         });
         const options = {
@@ -119,7 +119,7 @@ const CartSidebar = ({ isOpen, toggleCart }) => {
             
             try {
               console.log("🟡 Attempting to clear cart...");
-              const res = await axios.delete(`http://localhost:4000/cart/clear/${user._id}`);
+              const res = await axios.delete(`${import.meta.env.VITE_API_BASE_URL}/cart/clear/${user._id}`);
               console.log("✅ Cart Cleared Successfully: ", res.data);  
               
                 setCartItems([]);
