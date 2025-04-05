@@ -104,7 +104,7 @@ const CartSidebar = ({ isOpen, toggleCart }) => {
 
     const handleCheckout = async () => {
       try {
-        const { data } = await axios.post("${import.meta.env.VITE_API_BASE_URL}/api/payment/order", {
+        const { data } = await axios.post(`${import.meta.env.VITE_API_BASE_URL}/api/payment/order`, {
           amount: subtotal, 
         });
         const options = {
