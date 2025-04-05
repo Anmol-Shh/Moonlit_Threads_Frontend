@@ -13,7 +13,7 @@ const CartSidebar = ({ isOpen, toggleCart }) => {
   useEffect(() => {
     if (isOpen && user?._id) {
       axios
-        .get(`http://localhost:4000/cart/${user._id}`)
+        .get(`${import.meta.env.VITE_API_BASE_URL}/cart/${user._id}`)
         .then((res) => setCartItems(Array.isArray(res.data.items) ? res.data.items : []))
         .catch((err) => console.error("Error fetching cart:", err));
     }
