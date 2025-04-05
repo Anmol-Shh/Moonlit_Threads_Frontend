@@ -20,6 +20,7 @@ const Shop = () => {
     const fetchProducts = async () => {
       try {
         const response = await axios.get(`${import.meta.env.VITE_API_BASE_URL}/api/products`);
+        console.log(import.meta.env.VITE_API_BASE_URL);
         const menProducts = response.data.filter(
           (product) => product.category.toLowerCase() === "men"
         );
