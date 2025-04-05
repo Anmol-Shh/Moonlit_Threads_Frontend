@@ -1,24 +1,3 @@
-// import React from 'react'
-// import Header from '../components/Header'
-// import Footer from '../components/Footer'
-
-// const Fragrance = () => {
-//   return (
-//     <>
-//     <Header/>
-//     <div>
-//       <img src='https://fragrance1.s3.ap-south-1.amazonaws.com/FragranceMain'
-//       alt='Fragrance'
-//      className='p-3'>
-//       </img>
-//     </div>
-//     <Footer/>
-//     </>
-//   )
-// }
-
-// export default Fragrance;
-
 import React, { useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";
 import { Swiper, SwiperSlide } from "swiper/react";
@@ -40,7 +19,7 @@ const Shop = () => {
   useEffect(() => {
     const fetchProducts = async () => {
       try {
-        const response = await axios.get("http://localhost:4000/api/products");
+       const response = await axios.get(`${import.meta.env.VITE_API_BASE_URL}/api/products`);
         const menProducts = response.data.filter(
           (product) => product.category.toLowerCase() === "fragrance"
         );
