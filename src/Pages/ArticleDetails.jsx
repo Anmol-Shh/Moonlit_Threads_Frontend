@@ -43,7 +43,7 @@ const ArticleDetails = () => {
   
     const fetchArticleDetails = async () => {
       try {
-        const response = await axios.get(`http://localhost:4000/api/products/${id}`);
+        const response = await axios.get(`${import.meta.env.VITE_API_BASE_URL}/api/products/${id}`);
         setArticle(response.data);
         setMainImage(response.data.images[0]);
       } catch (error) {
@@ -67,27 +67,27 @@ const ArticleDetails = () => {
   };
 
   const handleBuyNow = async () => {
-    if (!selectedSize) {  // ✅ Check if size is selected
+    if (!selectedSize) {  
       alert("Please select a size before proceeding to checkout.");
       return;
     }
   
     try {
-      const { data } = await axios.post("http://localhost:4000/api/payment/order", {
-        amount: article.price,  // 💰 Pass the price of the article
+      const { data } = await axios.post(`${import.meta.env.VITE_API_BASE_URL}/api/payment/order`, {
+        amount: article.price,  
       });
   
       const options = {
-        key: import.meta.env.VITE_RAZORPAY_KEY_ID, // ⚡ Ensure env variable is set
+        key: import.meta.env.VITE_RAZORPAY_KEY_ID, 
         amount: data.order.amount,
         currency: "INR",
         name: "Moonlit Threads",
-        description: `${article.title} - Size: ${selectedSize}`, // 🏷️ Include selected size
+        description: `${article.title} - Size: ${selectedSize}`, 
         order_id: data.order.id,
         handler: async function (response) { 
           console.log("🟢 Payment Successful: ", response);
           alert("Payment successful!");  
-          window.location.href = "/order-success"; // ✅ Redirect after payment
+          window.location.href = "/order-success"; 
         },
         prefill: {
           name: "Anmol",
@@ -138,7 +138,7 @@ const ArticleDetails = () => {
         image: article.images[0] 
       };
   
-      const response = await axios.post("http://localhost:4000/api/cart", payload);
+      const response = await axios.post(`${import.meta.env.VITE_API_BASE_URL}/api/cart`, payload);
   
       if (response.status !== 200) {
         throw new Error("Failed to add item to cart");
