@@ -19,7 +19,7 @@ const Shop = () => {
   useEffect(() => {
     const fetchProducts = async () => {
       try {
-        axios.get(`${import.meta.env.VITE_API_BASE_URL}/api/products`);
+        const response = await axios.get(`${import.meta.env.VITE_API_BASE_URL}/api/products`);
         const menProducts = response.data.filter(
           (product) => product.category.toLowerCase() === "men"
         );
