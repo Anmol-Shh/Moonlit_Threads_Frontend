@@ -18,8 +18,8 @@
 **Email Service:** Nodemailer
 
 **<h1>IMP</h1>**
-**Imp:** Render takes couple of seconds to load the backend as I am using a free version of it. Thank you for your patience\
-also none of the pictures are mine they are taken from the existing luxurious brand Blurberry, Channel, Versace, Prada, OG luxury, Dior.
+**Imp:** Render takes couple of seconds to load the backend as I am using a free version of it. Thank you for your patience.\
+Also none of the pictures are mine they are taken from the existing luxurious brands viz. Blurberry, Channel, Versace, Prada, OG luxury, Dior.
 
 **<h1>📌 Setup Instructions</h1>**
 **<h3>Clone the repository</h3>**
