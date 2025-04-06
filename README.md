@@ -36,7 +36,7 @@ sh
 npm start
 ```
 **<h2>📌 Upcoming Enhancements</h2>**\
-🛍️ More Enhanced Looking UI
+🛍️ More Enhanced Looking UI\
 📦 Order & Inventory Management
 
 **<h1>Some of the early images and clips of the build</h1>**
