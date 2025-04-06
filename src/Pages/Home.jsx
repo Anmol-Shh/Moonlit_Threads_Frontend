@@ -114,8 +114,7 @@ const Home = () => {
           <img 
             className='w-screen' 
             src={MainImg} 
-            alt="Logo" 
-            onClick={RedirectHome} // Clickable logo to navigate to home
+            alt="Logo"
           />
         </main>
         
