@@ -41,11 +41,11 @@ npm start
 📦 Order & Inventory Management\
 
 **<h1>Some of the early images and clips of the build</h1>**
-<img src="https://github.com/user-attachments/assets/180a2f5d-baa4-4a6f-8a03-c90df0184e99" width="1200" height="800">
-<img src="https://github.com/user-attachments/assets/c7467760-3978-404f-a009-5bfa97b31fb9" width="1200" height="800">
-<img src="https://github.com/user-attachments/assets/30688e34-9421-4bad-942d-b28cbfb4f4bb" width="1200" height="800">
-<img src="https://github.com/user-attachments/assets/2302d511-aaf8-4817-be77-20fb01386f11" width="1200" height="800">
-<img src="https://github.com/user-attachments/assets/6ad20e87-7ff2-444f-a7cd-0be47428b2f1" width="1200" height="800">
-<img src="https://github.com/user-attachments/assets/3bd3140c-ad7c-48db-a992-cdaebeb0170d" width="1200" height="800">
+<img src="https://github.com/user-attachments/assets/180a2f5d-baa4-4a6f-8a03-c90df0184e99" width="1200" height="700">
+<img src="https://github.com/user-attachments/assets/c7467760-3978-404f-a009-5bfa97b31fb9" width="1200" height="700">
+<img src="https://github.com/user-attachments/assets/30688e34-9421-4bad-942d-b28cbfb4f4bb" width="1200" height="700">
+<img src="https://github.com/user-attachments/assets/2302d511-aaf8-4817-be77-20fb01386f11" width="1200" height="700">
+<img src="https://github.com/user-attachments/assets/6ad20e87-7ff2-444f-a7cd-0be47428b2f1" width="1200" height="700">
+<img src="https://github.com/user-attachments/assets/3bd3140c-ad7c-48db-a992-cdaebeb0170d" width="1200" height="700">
 ![Project Demo](https://github.com/user-attachments/assets/4646d953-a18d-438c-be7f-e44112cb729b)
 
