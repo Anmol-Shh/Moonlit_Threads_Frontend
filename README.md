@@ -1,5 +1,5 @@
-**<h1>E-Commerce Web Application 🛒(in progress)</h1>**
-<h3>A MERN stack-based e-commerce platform with secure authentication, dynamic product management, and cloud storage integration. This project is designed to provide a scalable and efficient online shopping experience.</h3>
+**<h1>E-Commerce Web Application 🛒</h1>**
+<h3>A MERN stack-based e-commerce platform with secure authentication, dynamic product management, and cloud storage integration. This project is designed to provide a scalable and efficient online shopping experience (not responsive).</h3>
 
 **<h1>🚀 Features</h1>**
 ✅ **User Authentication & Authorization** – Secure login, registration, JWT-based authentication, and email verification via Nodemailer ( login credentials are-USERID=>anmolsharma6503@gmail.com and PASSWORD=>A1@D1ad ).\
@@ -37,7 +37,8 @@ npm start
 ```
 **<h2>📌 Upcoming Enhancements</h2>**\
 🛍️ More Enhanced Looking UI\
-📦 Order & Inventory Management
+📦 Order & Inventory Management\
+📲 Addition of responsiveness
 
 **<h1>Some of the early images and clips of the build</h1>**
 <img src="https://github.com/user-attachments/assets/180a2f5d-baa4-4a6f-8a03-c90df0184e99" width="1200" height="700">
