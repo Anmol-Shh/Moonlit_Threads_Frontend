@@ -2,7 +2,7 @@
 <h3>A MERN stack-based e-commerce platform with secure authentication, dynamic product management, and cloud storage integration. This project is designed to provide a scalable and efficient online shopping experience.</h3>
 
 **<h1>🚀 Features</h1>**
-✅ **User Authentication & Authorization** – Secure login, registration, JWT-based authentication, and email verification via Nodemailer(login credentials are-USERID=>anmolsharma6503@gmail.com and PASSWORD=>A1@D1ad).\
+✅ **User Authentication & Authorization** – Secure login, registration, JWT-based authentication, and email verification via Nodemailer ( login credentials are-USERID=>anmolsharma6503@gmail.com and PASSWORD=>A1@D1ad ).\
 ✅ **Product Management** – Fetch and manage products dynamically using MongoDB and AWS S3 for image storage.\
 ✅ **Shopping Cart System** – Add, remove, and update cart items with real-time price calculations.\
 ✅ **Cloud Storage Integration** – Efficient product image handling using AWS S3.\
