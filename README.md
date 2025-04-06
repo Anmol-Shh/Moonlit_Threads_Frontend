@@ -45,7 +45,7 @@ npm start
 📲 Addition of responsiveness
 
 **<h1>Some of the early images and clips of the build</h1>**
-<img src="https://github.com/user-attachments/assets/180a2f5d-baa4-4a6f-8a03-c90df0184e99" width="1200" height="700">
+<img src="https://github.com/user-attachments/assets/532dd4a4-d424-4a60-a35f-cb18943ba341" width="1200" height="700">
 <img src="https://github.com/user-attachments/assets/c7467760-3978-404f-a009-5bfa97b31fb9" width="1200" height="700">
 <img src="https://github.com/user-attachments/assets/30688e34-9421-4bad-942d-b28cbfb4f4bb" width="1200" height="700">
 <img src="https://github.com/user-attachments/assets/2302d511-aaf8-4817-be77-20fb01386f11" width="1200" height="700">
