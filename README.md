@@ -17,6 +17,9 @@
 **Storage:** AWS S3\
 **Email Service:** Nodemailer
 
+**<h1>IMP</h1>**
+**Imp:** Render takes couple of seconds to load the backend as I am using a free version of it. Thank you for your patience
+
 **<h1>📌 Setup Instructions</h1>**
 **<h3>Clone the repository</h3>**
 ```
