@@ -1,4 +1,4 @@
-![image](https://github.com/user-attachments/assets/b8f45308-7e58-4c9d-98a9-648840d5aebd)**<h1>E-Commerce Web Application 🛒(in progress)</h1>**
+**<h1>E-Commerce Web Application 🛒(in progress)</h1>**
 <h3>A MERN stack-based e-commerce platform with secure authentication, dynamic product management, and cloud storage integration. This project is designed to provide a scalable and efficient online shopping experience.</h3>
 
 **<h1>🚀 Features</h1>**
