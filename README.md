@@ -1,4 +1,4 @@
-**<h1>E-Commerce Web Application 🛒(in progress)</h1>**
+![image](https://github.com/user-attachments/assets/b8f45308-7e58-4c9d-98a9-648840d5aebd)**<h1>E-Commerce Web Application 🛒(in progress)</h1>**
 <h3>A MERN stack-based e-commerce platform with secure authentication, dynamic product management, and cloud storage integration. This project is designed to provide a scalable and efficient online shopping experience.</h3>
 
 **<h1>🚀 Features</h1>**
@@ -41,9 +41,11 @@ npm start
 📦 Order & Inventory Management\
 
 **<h1>Some of the early images and clips of the build</h1>**
-<img src="https://github.com/user-attachments/assets/180a2f5d-baa4-4a6f-8a03-c90df0184e99" width="1000" height="800">
-<img src="https://github.com/user-attachments/assets/2109bb1f-4b2e-46c9-93a8-47286a470e0d" width="1000" height="800">
-<img src="https://github.com/user-attachments/assets/d836c8ef-e9ab-421e-bcd9-5906b4a57f5d" width="1000" height="800">
-<img src="https://github.com/user-attachments/assets/a7d754e6-25c3-41ed-a3e2-08cd0e2df847" width="1000" height="800">
+<img src="https://github.com/user-attachments/assets/180a2f5d-baa4-4a6f-8a03-c90df0184e99" width="1200" height="800">
+<img src="https://github.com/user-attachments/assets/c7467760-3978-404f-a009-5bfa97b31fb9" width="1200" height="800">
+<img src="https://github.com/user-attachments/assets/30688e34-9421-4bad-942d-b28cbfb4f4bb" width="1200" height="800">
+<img src="https://github.com/user-attachments/assets/2302d511-aaf8-4817-be77-20fb01386f11" width="1200" height="800">
+<img src="https://github.com/user-attachments/assets/6ad20e87-7ff2-444f-a7cd-0be47428b2f1" width="1200" height="800">
+<img src="https://github.com/user-attachments/assets/3bd3140c-ad7c-48db-a992-cdaebeb0170d" width="1200" height="800">
 ![Project Demo](https://github.com/user-attachments/assets/4646d953-a18d-438c-be7f-e44112cb729b)
 
