@@ -199,11 +199,11 @@ const Home = () => {
         <div id="collections" className="">
           <div>
             <img
-              className="cols-image w-full h-screen object-cover"
+              className="cols-image w-full h-[70vh] md:h-screen object-cover"
               src={collection1}
               alt=""
             />
-            <div className="main-img text-overlay absolute top-0 w-full text-white text-[50px] md:text-[150px]">
+            <div className="main-img text-overlay absolute top-1/3 w-full text-white text-[50px] md:text-[150px]">
               Winter Drop
             </div>
           </div>

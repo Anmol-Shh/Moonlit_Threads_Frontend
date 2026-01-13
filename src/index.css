@@ -208,10 +208,16 @@ Link {
 .image-container {
   margin-right: 5px;
   position: relative;
-  height: 500px; /* Match height of other containers */
+  height: 300px; /* Reduced height for mobile */
   overflow: hidden;
   border-radius: 1px;
   margin-top: 0.8rem;
+}
+
+@media (min-width: 768px) {
+  .image-container {
+    height: 500px; /* Original height for desktop */
+  }
 }
 
 .image-container img {
@@ -537,6 +543,8 @@ p {
   .footer__upper {
     text-align: center;
     padding: 20px;
+    flex-direction: column; /* Stack elements vertically */
+    gap: 20px; /* Add gap between graphic and message */
   }
 
   .footer__nav {
@@ -554,22 +562,31 @@ p {
     gap: 10px;
   }
 
+  .footer__graphic { /* Center the graphic container */
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+
   .footer__graphic img {
-    width: 60%;
+    width: 40%; /* Adjust size */
+    max-width: 150px;
     margin-left: 0;
   }
 
   .footer__message {
+    padding: 0 10px;
     margin-left: 0;
   }
 
   .footer__message h1 {
-    font-size: 40px;
+    font-size: 30px; /* Smaller font on mobile */
   }
 
   .footer__message p {
     margin-left: 0;
     max-width: 100%;
     padding: 0 20px;
+    font-size: 14px;
   }
 }
