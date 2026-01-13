@@ -182,7 +182,7 @@ const Home = () => {
             ref={img_container}
             className="section-3 perspective mt-16 flex justify-center h-screen w-screen items-center "
           >
-            <img ref={img} className="image w-screen" src={zoomImg} alt="" />
+            <img ref={img} className="image w-full h-full object-cover" src={zoomImg} alt="" />
             <div className="slide-image absolute text-white flex flex-col items-center justify-center">
               <h1
                 ref={text1}
@@ -199,7 +199,7 @@ const Home = () => {
         <div id="collections" className="">
           <div>
             <img
-              className="cols-image col-span-2 w-screen h-screen object-cover"
+              className="cols-image w-full h-screen object-cover"
               src={collection1}
               alt=""
             />

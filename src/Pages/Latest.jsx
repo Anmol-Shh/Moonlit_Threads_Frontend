@@ -41,7 +41,7 @@ const Latest = () => {
   return (
     <>
       <Header />
-      <div onClick={MenRedirect} className="change-cursor video-container w-full md:w-[97.5%] max-w-[1600px] h-[50vh] md:h-[80vh] overflow-hidden relative items-center justify-center flex my-5 md:m-5" data-cursor-color="#321e12">
+      <div onClick={MenRedirect} className="change-cursor video-container w-full max-w-full h-[50vh] md:h-[80vh] overflow-hidden relative items-center justify-center flex my-5 md:m-5" data-cursor-color="#321e12">
       <div className="absolute top-1 left-5 z-10 text-[var(--color-dark-brown)]">
       <h1 className="mensHeader text-[30px] md:text-[50px] ">Men's Drop</h1>
       <h3 className="text-[20px] font-[futura]">Explore the Latest S'25 Collection</h3>
@@ -62,7 +62,7 @@ const Latest = () => {
           ))}
         </div>
 
-      <div onClick={WomenRedirect} className="change-cursor video-container w-full md:w-[97.5%] max-w-[1600px] h-[50vh] md:h-[80vh] overflow-hidden relative items-center justify-center flex my-5 md:m-5" data-cursor-color="#321e12">
+      <div onClick={WomenRedirect} className="change-cursor video-container w-full max-w-full h-[50vh] md:h-[80vh] overflow-hidden relative items-center justify-center flex my-5 md:m-5" data-cursor-color="#321e12">
       <div className="absolute top-1 right-5 z-10 text-[var(--color-dark-brown)]">
       <h1 className="mensHeader text-[30px] md:text-[50px] ">Women's Drop</h1>
       <h3 className="text-[20px] text-right font-[futura]">Explore the Latest S'25 Collection</h3>

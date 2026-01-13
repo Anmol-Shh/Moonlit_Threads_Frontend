@@ -84,9 +84,15 @@ body {
 }
 
 main {
-  margin-top: 5px;
-  min-height: 87vh; /* Changed from height to min-height */
-  /* overflow: hidden; Removed to allow scrolling on mobile */
+    margin-top: 5px;
+    height: auto; /* Adapt to content height on mobile */
+}
+
+@media (min-width: 768px) {
+    main {
+        height: 87vh;
+        overflow: hidden;
+    }
 }
 
 /* Button Styles */
