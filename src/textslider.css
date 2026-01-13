@@ -1,0 +1,29 @@
+.slider-container {
+    position: relative;
+    width: 100%;
+    height: 400px; /* Adjust height as needed */
+    overflow: hidden;
+}
+
+.text-slider {
+    position: absolute;
+    top: 20px; /* Adjust as needed */
+    left: 20px; /* Adjust as needed */
+    color: white; /* Change text color */
+    z-index: 10; /* Ensure text is above images */
+    opacity: 0; /* Start hidden */
+    transition: opacity 0.5s ease;
+}
+
+.image-slider {
+    width: 100%;
+    height: 100%;
+}
+
+.image-slider img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ensure images cover the container */
+    opacity: 0; /* Start hidden */
+    transition: opacity 0.5s ease;
+}

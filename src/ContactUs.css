@@ -1,0 +1,117 @@
+.book-a-demo {
+padding: 20px;
+max-width: 600px;
+margin: auto;
+color:var(--color-dark-brown);
+}
+
+.demo-header {
+text-align: center;
+margin-bottom: 20px;
+height:180px;
+}
+
+.demo-header h1 {
+    font-family:Futura;
+    font-size: 3.2rem;
+    font-weight: 600;
+    margin-bottom:20px;
+}
+.demo-header p{
+    letter-spacing:0.5px;
+    font-size: 1.2rem;
+    font-family:futura;
+}
+
+.demo-form {
+    background:white ;
+    padding: 2rem; /* Reduced padding for mobile */
+    /* border-radius: 20px; */
+    /* border: 2px solid #070707; */
+    width: 100%; /* Responsive width */
+    max-width: 800px; /* Cap width for larger screens */
+    margin: 0 auto; /* Center the form horizontally */
+    margin-bottom: 7rem;
+    box-sizing: border-box; /* Ensure padding is included in width */
+}
+
+@media (min-width: 768px) {
+    .demo-form {
+        padding: 5rem; /* Original padding for desktop */
+    }
+}
+
+
+.demo-header {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-row {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+.form-row .form-group {
+    flex: 1;
+    margin-right: 10px;
+}
+
+.form-row .form-group:last-child {
+    margin-right: 0;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    font-family: Kla;
+    font-size: 17px;
+    color: #4c4c4c;
+}
+
+input,
+select {
+    width: 100%;
+    padding: 5px;
+    border: 1px solid #6a6a6a;
+    border-radius: 4px;
+    box-sizing: border-box;
+    font-family: Kla;
+    margin-bottom: 10px;
+}
+
+.submit-button-container {
+    display: flex;
+    justify-content: center; /* Centers the button horizontally */
+    margin-top: 20px;
+}
+
+.submit-button {
+    width: auto;
+    padding: 7px 30px; /* Adjust padding for pill shape */
+    background-color: #557760;
+    color: white;
+    border: none;
+    border-radius: 50px; /* Pill shape */
+    cursor: pointer;
+    font-size: 0.7em;
+    transition: background-color 0.3s;
+    font-family: Kla;
+    font-weight: 600;
+}
+
+.submit-button:hover {
+    background-color: #4c5e52;
+}
+
+select#region option, select#eventType option, select#referralSource option {
+    font-family: Futura; 
+    font-size: 16px;
+  }
+  

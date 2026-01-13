@@ -1,0 +1,569 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .text-stroke {
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke-color: white;
+    -webkit-text-stroke-width: 1px;
+  }
+
+  .perspective {
+    overflow-x: hidden;
+    overflow-y: hidden;
+    perspective: 210px;
+  }
+}
+@font-face {
+  font-family: Found;
+  src: url("./fonts/FoundersGroteskCondensed-Bold.ttf");
+}
+
+@font-face {
+  font-family: Eu;
+  src: url("./fonts/mergian-regular.otf");
+}
+
+@font-face {
+  font-family: LeAm;
+  src: url("./fonts/Le-Amatcky.otf");
+}
+
+@font-face {
+  font-family: Leo;
+  src: url("./fonts/Leotaro-Free.otf");
+}
+
+@font-face {
+  font-family: Kla;
+  src: url("./fonts/KlarheitGrotesk-Regular.ttf");
+}
+
+@font-face {
+  font-family: Frago;
+  src: url("./fonts/Fragor-DemoVersion-Regular.otf");
+}
+
+@font-face {
+  font-family: Futura;
+  src: url("./fonts/Futura.ttf");
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: futura;
+}
+
+/* Color Variables */
+:root {
+  --color-black: #1c1c1c;
+  --color-light-beige: #e1d9d2;
+  --color-dark-brown: #321e12;
+  --color-grayish-brown: #847a71;
+  --color-medium-brown: #8c755d;
+  --color-tan: #a8927c;
+  --color-light-gray-tan: #b8ad9e;
+  --color-mauve-gray: #a29694;
+  --color-light-gray: #b5b3ac;
+  --color-slate-green: #5a7061;
+}
+::selection {
+  color: var(--color-slate-green);
+  background-color: var(--color-light-gray-tan);
+}
+
+/* Body and Main Styles */
+html,
+body {
+  background-color: var(--color-light-beige);
+  cursor: none;
+  overflow-y: hidden;
+}
+
+main {
+  margin-top: 5px;
+  min-height: 87vh; /* Changed from height to min-height */
+  /* overflow: hidden; Removed to allow scrolling on mobile */
+}
+
+/* Button Styles */
+.bname button {
+  background-color: var(--color-dark-brown);
+  padding: 0.3rem 1rem;
+  border-radius: 20px;
+  border-width: 1px;
+  border-color: var(--color-light-beige);
+  color: var(--color-light-beige);
+  font-size: 13px;
+}
+
+/* Bname Section */
+.bname {
+  background-color: var(--color-dark-brown);
+  padding: 0.5rem 2rem;
+}
+
+.bname h2 {
+  font-family: Eu;
+  font-size: 24px; /* Default for mobile */
+  font-weight: 500;
+  letter-spacing: 1.5px;
+  color: var(--color-light-beige);
+}
+
+@media (min-width: 768px) {
+  .bname h2 {
+    font-size: 40px; /* Desktop size */
+  }
+}
+
+/* Abstract Styles */
+.abstract img {
+  z-index: 100;
+  position: relative;
+  height: 10px;
+  width: 10px;
+}
+
+/* Section Styling */
+section {
+  background-color: var(--color-light-beige);
+  margin-top: 4px;
+}
+
+Link {
+  font-family: Futura;
+  font-size: 30px;
+}
+
+/* Custom Cursor */
+.cursor-dot {
+  cursor: none;
+  width: 8px;
+  height: 8px;
+  background-color: #fff;
+  border-radius: 50%;
+  position: fixed;
+  pointer-events: none;
+  z-index: 9999;
+  transform: translate(-50%, -50%);
+}
+
+.cursor-ring {
+  cursor: none;
+  width: 40px;
+  height: 40px;
+  border: 2px solid #fff;
+  border-radius: 50%;
+  position: fixed;
+  pointer-events: none;
+  z-index: 9998;
+  transform: translate(-50%, -50%);
+  display: none; /* Hide custom cursor ring on touch devices/mobile */
+}
+
+@media (min-width: 768px) {
+  .cursor-ring {
+    display: block;
+  }
+}
+
+/* Section-2 Layout */
+.section-2 {
+  text-align: center;
+}
+
+.article-blaze {
+  width: 100%; /* Full width on mobile */
+  overflow: hidden;
+  margin-top: 2rem;
+  height: auto; /* Allow auto height */
+}
+
+@media (min-width: 768px) {
+  .article-blaze {
+    width: 30%;
+    margin-top: 3rem;
+    height: 37vw;
+  }
+}
+
+.section-2 .link {
+  font-family: Futura;
+  font-size: 27px;
+  color: #6a6a6a;
+}
+
+/* Container holding both images */
+/* Image container holding both images */
+.image-container {
+  margin-right: 5px;
+  position: relative;
+  height: 500px; /* Match height of other containers */
+  overflow: hidden;
+  border-radius: 1px;
+  margin-top: 0.8rem;
+}
+
+.image-container img {
+  position: absolute; /* Stack the images on top of each other */
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Ensures the image covers the entire container */
+  transition: opacity 0.5s ease-in-out;
+}
+
+/* Default image (blaze1) will have full opacity initially */
+.image-container .default-image {
+  opacity: 1;
+}
+
+/* Secondary image (blaze1Sec) starts hidden */
+.image-container .hover-image {
+  opacity: 0;
+}
+
+/* On hover, fade out the default image and fade in the secondary one */
+.image-container:hover .default-image {
+  opacity: 0;
+}
+
+.image-container:hover .hover-image {
+  opacity: 1;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent black */
+  opacity: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: opacity 0.5s ease-in-out; /* Smooth transition for overlay */
+}
+/* Text on the overlay */
+.overlay-text {
+  font-family: Futura;
+  font-size: 2rem;
+  color: #fff;
+  z-index: 10; /* Ensure the text appears on top */
+}
+
+/* On hover, the overlay becomes visible */
+.image-container:hover .overlay {
+  opacity: 1;
+}
+
+/* Icons Styling */
+.icons img {
+  height: 20px;
+  transition: all 0.1s ease-in;
+}
+
+.icons img:hover {
+  transform: scale(1.2);
+}
+
+/* Loading Screen */
+.loading-screen {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+/* Bname Menu Button */
+.bname .menu-btn {
+  font-family: Futura;
+  cursor: none;
+}
+
+.section-3 h1,
+span,
+p {
+  font-family: Eu;
+  letter-spacing: 0;
+}
+
+.section-3 p {
+  font-family: Eu;
+  letter-spacing: 1px;
+}
+.section-3main {
+  background-color: var(--color-dark-brown);
+  font-size: 25px;
+  width: 100vw;
+}
+
+.section-3 {
+  background-color: var(--color-dark-brown);
+  width: 100vw;
+}
+
+#collections {
+  position: relative;
+  overflow: hidden;
+}
+
+.grid-img {
+  position: absolute;
+  top: 48%;
+  left: 50%;
+  transform: translate(-50%, 0%);
+  color: white;
+  font-family: Futura;
+  font-weight: 300;
+  font-size: xxx-large;
+  text-align: center;
+  width: 100%;
+}
+
+.main-img {
+  position: absolute;
+  top: 35%;
+  left: 50%;
+  transform: translate(-50%, -100%);
+  color: white;
+  font-family: Futura;
+  font-weight: 300;
+  text-align: center;
+  width: 100%;
+}
+
+/* General Styles */
+.footer {
+  background-color: var(--color-dark-brown);
+  color: #fff;
+  font-family: Arial, sans-serif;
+  text-align: center;
+  padding: 0px 0;
+}
+
+/* Upper Section */
+.footer__upper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 40px;
+  padding: 20px;
+}
+
+.footer__graphic img {
+  flex: 1;
+  text-align: left;
+  height: auto;
+  width: 350px;
+  margin-left: 50px;
+}
+
+.footer__message {
+  flex: 2;
+  text-align: center;
+  margin-left: 20%;
+}
+
+.footer__message h1 {
+  font-family: Leo;
+  font-size: 60px;
+  margin-bottom: 10px;
+  text-transform: uppercase;
+}
+
+.footer__message p {
+  font-size: 19px;
+  margin-bottom: 30px;
+  max-width: 350px;
+  line-height: 1.5;
+  margin-left: 25%;
+  font-family: Futura;
+}
+
+.footer__demo-button {
+  background-color: transparent;
+  color: #fff;
+  padding: 10px 20px;
+  font-size: 14px;
+  border: 2px solid #fff;
+  position: relative;
+  overflow: hidden;
+  transition: color 0.4s ease;
+  z-index: 1;
+  border-radius: 30px;
+  font-family: Futura;
+}
+
+.footer__demo-button::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 0;
+  background-color: #fff;
+  transition: height 0.4s ease;
+  z-index: -1;
+}
+
+.footer__demo-button:hover::before {
+  height: 100%;
+}
+
+.footer__demo-button:hover {
+  color: #000;
+}
+
+/* Navigation Section */
+.footer__nav {
+  display: flex;
+  justify-content: center;
+  gap: 150px;
+  margin: 120px 0 0px 0;
+  /* border-bottom: 1px solid var(--color-light-beige); */
+}
+
+.footer__nav ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer__nav ul li {
+  font-size: 16px;
+  margin-bottom: 10px;
+  cursor: pointer;
+  font-family: Futura;
+  font-weight: 600;
+}
+
+.footer__nav ul li:hover {
+  text-decoration: underline;
+}
+
+.footer__bottom {
+  margin-top: 20px;
+}
+
+.footer__links {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  gap: 150px;
+  margin: 20px 0;
+}
+
+.footer__links li {
+  font-family: futura;
+  font-weight: 600;
+  font-size: 13px;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+.footer__links li:hover {
+  text-decoration: underline;
+}
+
+.footer__line {
+  width: 70%; /* Adjust the width as needed */
+  height: 1px; /* Thickness of the line */
+  background-color: var(--color-light-beige);
+  margin: 20px auto; /* Centers the line */
+}
+
+.marquee {
+  overflow: hidden;
+  white-space: nowrap;
+  border-top: 3px solid var(--color-light-beige); /* Add this line to create a fine border */
+  padding: 12px 0;
+}
+
+.marquee__inner {
+  display: inline-block;
+  padding-left: 100%; /* Initial offset to start the animation */
+  animation: marquee 120s linear infinite;
+}
+
+.marquee__inner span {
+  display: inline-block;
+  padding-right: 50px; /* Space between each phrase */
+  font-family: Kla;
+  font-size: 14px;
+}
+/* Swiper Styles */
+.swiper-container {
+  overflow: hidden; /* Prevent slides from being visible outside the container */
+  position: relative;
+}
+
+.mensHeader {
+  font-family: Eu;
+}
+.prodName {
+  font-family: Futura;
+}
+
+@keyframes marquee {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .footer__upper {
+    text-align: center;
+    padding: 20px;
+  }
+
+  .footer__nav {
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+
+  .footer__nav ul li {
+    margin-bottom: 5px;
+  }
+
+  .footer__links {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .footer__graphic img {
+    width: 60%;
+    margin-left: 0;
+  }
+
+  .footer__message {
+    margin-left: 0;
+  }
+
+  .footer__message h1 {
+    font-size: 40px;
+  }
+
+  .footer__message p {
+    margin-left: 0;
+    max-width: 100%;
+    padding: 0 20px;
+  }
+}
